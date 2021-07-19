@@ -61,7 +61,7 @@ def generateDataSet(file_path):
     file = []
     for i in range(0,files.shape[0]-1,5):   
         file.append(files[i,:,:])
-        if len(file)==20:
+        if len(file)==103:
             break
                     
     frames = np.empty((len(file),file[0].shape[0],file[0].shape[1],3),files.dtype)
